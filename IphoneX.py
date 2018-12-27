@@ -144,6 +144,8 @@ X_train_vectorized = vect.transform(X_train)
 len(vect.get_feature_names())
 
 
+# Based on feature matrix X_ train_ vectorized we train the Logistic Regression classifier because Logistics Regression works well for high dimensional sparse data.
+
 # In[39]:
 
 
@@ -157,6 +159,8 @@ predictions = model.predict(vect.transform(X_test))
 
 print('ROC_AUC: ', roc_auc_score(y_test, predictions))
 
+
+# Results are really good. Now we will use coefficients for each word to understand positivity and negativity. we will also sort to find out first 10 worst and best words
 
 # In[40]:
 
@@ -190,6 +194,8 @@ print(comments_positivity)
 
 comments_positivity.mean()
 
+
+# Now as we can see that our model is working properly with review data and we see positive sentiment about iphone x we will plot a cloud to find out common words used with iphone
 
 # In[44]:
 
@@ -245,6 +251,8 @@ plt.show()
 
 df.head()
 
+
+# Checking sentiment of our own small data for sentiment through textblob (text analytics class)
 
 # In[49]:
 
