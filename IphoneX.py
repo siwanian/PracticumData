@@ -369,14 +369,14 @@ df2 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/mast
 df3 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/master/result3.csv',names=['created','screenname','followers','favourites','text'], error_bad_lines=False)
 df4 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/master/result4.csv',names=['created','screenname','followers','favourites','text'], error_bad_lines=False)
 df5 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/master/result5.csv',names=['created','screenname','followers','favourites','text'], error_bad_lines=False)
-#df6 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/master/result6.csv',names=['created','screenname','followers','favourites','text'], error_bad_lines=False)
+df6 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/master/result6.csv',names=['created','screenname','followers','favourites','text'], error_bad_lines=False)
 df7 = pd.read_csv('https://raw.githubusercontent.com/siwanian/PracticumData/master/result7.csv',names=['created','screenname','followers','favourites','text'], error_bad_lines=False)
 
 
 # In[124]:
 
 
-dff = pd.concat([df0,df1,df2,df3,df4,df5,df7],ignore_index=True)
+dff = pd.concat([df0,df1,df2,df3,df4,df5,df6,df7],ignore_index=True)
 
 
 # In[125]:
@@ -384,6 +384,8 @@ dff = pd.concat([df0,df1,df2,df3,df4,df5,df7],ignore_index=True)
 
 dff.head()
 
+
+# Testing the sentiment against the model we have built
 
 # In[126]:
 
@@ -457,7 +459,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk import pos_tag
 
 
-# Boiler place code for cleanup. Run this on twitter data and find how word cloud looks now
+# Boiler plate code for cleanup. Run this on twitter data and find how word cloud looks now
 
 # In[142]:
 

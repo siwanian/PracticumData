@@ -13701,7 +13701,7 @@ Name: Review, dtype: object</pre>
 <span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/siwanian/PracticumData/master/result3.csv&#39;</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">,</span><span class="s1">&#39;screenname&#39;</span><span class="p">,</span><span class="s1">&#39;followers&#39;</span><span class="p">,</span><span class="s1">&#39;favourites&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/siwanian/PracticumData/master/result4.csv&#39;</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">,</span><span class="s1">&#39;screenname&#39;</span><span class="p">,</span><span class="s1">&#39;followers&#39;</span><span class="p">,</span><span class="s1">&#39;favourites&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/siwanian/PracticumData/master/result5.csv&#39;</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">,</span><span class="s1">&#39;screenname&#39;</span><span class="p">,</span><span class="s1">&#39;followers&#39;</span><span class="p">,</span><span class="s1">&#39;favourites&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="c1">#df6 = pd.read_csv(&#39;https://raw.githubusercontent.com/siwanian/PracticumData/master/result6.csv&#39;,names=[&#39;created&#39;,&#39;screenname&#39;,&#39;followers&#39;,&#39;favourites&#39;,&#39;text&#39;], error_bad_lines=False)</span>
+<span class="n">df6</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/siwanian/PracticumData/master/result6.csv&#39;</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">,</span><span class="s1">&#39;screenname&#39;</span><span class="p">,</span><span class="s1">&#39;followers&#39;</span><span class="p">,</span><span class="s1">&#39;favourites&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df7</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/siwanian/PracticumData/master/result7.csv&#39;</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">,</span><span class="s1">&#39;screenname&#39;</span><span class="p">,</span><span class="s1">&#39;followers&#39;</span><span class="p">,</span><span class="s1">&#39;favourites&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
@@ -13715,7 +13715,7 @@ Name: Review, dtype: object</pre>
 <div class="prompt input_prompt">In&nbsp;[124]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dff</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df0</span><span class="p">,</span><span class="n">df1</span><span class="p">,</span><span class="n">df2</span><span class="p">,</span><span class="n">df3</span><span class="p">,</span><span class="n">df4</span><span class="p">,</span><span class="n">df5</span><span class="p">,</span><span class="n">df7</span><span class="p">],</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dff</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df0</span><span class="p">,</span><span class="n">df1</span><span class="p">,</span><span class="n">df2</span><span class="p">,</span><span class="n">df3</span><span class="p">,</span><span class="n">df4</span><span class="p">,</span><span class="n">df5</span><span class="p">,</span><span class="n">df6</span><span class="p">,</span><span class="n">df7</span><span class="p">],</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13822,6 +13822,15 @@ Name: Review, dtype: object</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Testing the sentiment against the model we have built</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14015,7 +14024,7 @@ Name: Review, dtype: object</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Boiler place code for cleanup. Run this on twitter data and find how word cloud looks now</p>
+<p>Boiler plate code for cleanup. Run this on twitter data and find how word cloud looks now</p>
 
 </div>
 </div>
