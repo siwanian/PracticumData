@@ -130,6 +130,11 @@ X_train, X_test, y_train, y_test = train_test_split(df['Reviews'],
                                                     df['Positively Rated'],random_state=3)
 
 
+# #### Bags-of-words
+# We will use bag of words method to find out frequency of each word in the whole structure. CountVectorizer provides us tokens based on text data we have provided
+# 
+# let's use CountVectorizer and fit it to our training data, converting our collection of text documents into a matrix of token counts and find the total length
+
 # In[38]:
 
 
